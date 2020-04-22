@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 
-app.use(express.static(__dirname + '/dist/ahorcado'));
+app.use(express.static(__dirname + '/dist/Ahorcado'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/<name-of-app>/index.html'));
+res.sendFile(path.join(__dirname+'/dist/Ahorcado/index.html'));
 });
 
 
